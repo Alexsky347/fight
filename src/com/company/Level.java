@@ -10,8 +10,10 @@ public class Level {
             number++;
         }
 
-        if(type.type.equals("down")){
-            number--;
+        if(number > 1){
+            if(type.type.equals("down")){
+                number--;
+            }
         }
 
         return number;
