@@ -6,15 +6,15 @@ public class Level {
 
     public int changeLevel(Type type) {
 
-        if(type.type.equals("up")){
+        if (type.type.equals("up")) {
             number++;
         }
 
-        if(number > 1){
-            if(type.type.equals("down")){
-                number--;
-            }
+
+        if (type.type.equals("down") && number > 0) {
+            number--;
         }
+
 
         return number;
     }
